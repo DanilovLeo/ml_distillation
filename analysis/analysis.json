@@ -1,0 +1,67 @@
+{
+ "params": {
+  "unet": 2567463684,
+  "vae": 83653863,
+  "vae_decoder": 49490179,
+  "text_encoder_1": 123060480,
+  "text_encoder_2": 694659840
+ },
+ "unet_flops": {
+  "512": {
+   "total": 1588778762240,
+   "by_op": {
+    "aten.addmm": 831360860160,
+    "aten.convolution": 405777940480,
+    "aten.mm": 296589721600,
+    "aten.bmm": 55050240000
+   },
+   "by_block": {
+    "down_blocks.0": 32088064000,
+    "down_blocks.1": 105647308800,
+    "down_blocks.2": 357072896000,
+    "mid_block": 195316940800,
+    "up_blocks.0": 594329600000,
+    "up_blocks.1": 222748672000,
+    "up_blocks.2": 81371955200
+   }
+  },
+  "768": {
+   "total": 3641208995840,
+   "by_op": {
+    "aten.addmm": 1870499676160,
+    "aten.convolution": 913000366080,
+    "aten.mm": 601725337600,
+    "aten.bmm": 255983616000
+   },
+   "by_block": {
+    "down_blocks.0": 72196096000,
+    "down_blocks.1": 265882828800,
+    "down_blocks.2": 802095104000,
+    "mid_block": 438799564800,
+    "up_blocks.0": 1335263232000,
+    "up_blocks.1": 543449088000,
+    "up_blocks.2": 183083827200
+   }
+  },
+  "1024": {
+   "total": 6761236398080,
+   "by_op": {
+    "aten.addmm": 3325294018560,
+    "aten.convolution": 1623111761920,
+    "aten.mm": 1028915200000,
+    "aten.bmm": 783915417600
+   },
+   "by_block": {
+    "down_blocks.0": 128347340800,
+    "down_blocks.1": 546584002560,
+    "down_blocks.2": 1460358348800,
+    "mid_block": 797291315200,
+    "up_blocks.0": 2425418547200,
+    "up_blocks.1": 1076986839040,
+    "up_blocks.2": 325480448000
+   }
+  }
+ },
+ "vae_decode_flops_1024": 10470392594432,
+ "text_enc_flops": 111161610240
+}
